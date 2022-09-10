@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ultimate Who Would Win</title>
+    <script type="javascript" src="js/main.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+
+  <div style="height:70px"><!--spacer because I'm lazy--></div>
+  <div class="border border-primary rounded" style="width:60vw;margin-left:auto;margin-right:auto;padding:20px">
+    <div class="text-primary h3 font-weight-bold">
+      Who Would Win
+    </div>
+    <form id="rockplusForm" action="#" onsubmit="submitRockplus();return false">
+
+      <div class="form-group">
+        <label for="playerOneInput">Fighter 1:</label>
+        <input type="text" class="form-control" id="playerOneInput">
+        <label for="playerTwoInput">Fighter 2:</label>
+        <input type="text" class="form-control" id="playerTwoInput">
+      </div>
+
+      <button type="submit" class="btn btn-primary">FIGHT!</button>
+    </form>
+    <div style="height:20px"><!--spacer because I'm lazy--></div>
+    <div id="results">
+      <!--The results quip-->
+    </div>
+    <div style="height:20px"><!--spacer because I'm lazy--></div>
+    <div id="victor" class="text-danger h3 font-weight-bold">
+      <!--The winner display-->
+    </div>
+  </div>
+    <script src="rockplus.js"></script>
+  </body>
+</html>
